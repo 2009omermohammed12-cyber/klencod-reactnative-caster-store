@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "كاستر ستور",
+    "slug": "caster-store",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.casterstore.app"
+    },
+    "android": {
+      "package": "com.casterstore.app",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#F5F1E5"
+      }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "color": "#1F3A6E",
+          "sounds": [
+            "./assets/sounds/chime.wav",
+            "./assets/sounds/bell.wav",
+            "./assets/sounds/pop.wav",
+            "./assets/sounds/ding.wav",
+            "./assets/sounds/alert.wav",
+            "./assets/sounds/melody.wav",
+            "./assets/sounds/soft.wav",
+            "./assets/sounds/horn.wav"
+          ],
+          "icon": "./assets/notification-icon.png"
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "يحتاج التطبيق للوصول إلى الصور لإرسالها في الدعم أو رفعها للمنتجات."
+        }
+      ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "YOUR_EAS_PROJECT_ID"
+      }
+    },
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5F1E5"
+    }
+  }
+}
