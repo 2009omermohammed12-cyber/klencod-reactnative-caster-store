@@ -139,7 +139,7 @@ export default function Settings({ navigation }) {
           <Row icon="📄" label="شروط الاستخدام" onPress={() => navigation.navigate('Legal', { kind: 'terms' })} />
           <Row icon="🔒" label="سياسة الخصوصية" onPress={() => navigation.navigate('Legal', { kind: 'privacy' })} />
           <Row icon="📘" label="تواصلوا معنا عبر فيسبوك" onPress={() => Linking.openURL(STORE.facebook).catch(() => {})} />
-          <Row icon="📤" label="مشاركة التطبيق" onPress={() => Share.share({ message: `جرّب تطبيق ${STORE.name} للتسوق: ${STORE.facebook}` })} />
+          <Row icon="📤" label="مشاركة التطبيق" onPress={() => Share.share({ message: `🛍️ جرّب تطبيق ${STORE.name} للتسوق — توصيل مجاني لكل المحافظات والدفع عند الاستلام.\n${STORE.shareUrl || STORE.facebook}` })} />
         </Section>
 
         {session ? (

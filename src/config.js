@@ -14,6 +14,8 @@ export const STORE = {
   name: 'كاستر ستور',
   currency: 'د.ع',
   deliveryFee: 0, // التوصيل مجاني. ضع رقماً أكبر من صفر لتفعيل رسوم التوصيل
+  // رابط تحميل التطبيق الذي يُرسَل عند المشاركة (ضع رابط Google Drive أو Play Store بعد النشر)
+  shareUrl: '',
   facebook: 'https://www.facebook.com/profile.php?id=61590033001219',
   version: Constants.expoConfig?.version ?? '1.0.0',
 };
